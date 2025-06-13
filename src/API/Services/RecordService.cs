@@ -67,6 +67,6 @@ public class RecordService : IRecordService
         await context.Record.AddAsync(newRecord);
         await context.SaveChangesAsync();
         
-        return new CreatedRecordResponseBody(newRecord.Id, newRecord.LanguageId, newRecord.TaskId, newRecord.LanguageId, newRecord.TaskId, newRecord.CreatedAt, newRecord.StudentId);
+        return new CreatedRecordResponseBody(newRecord.Id, newRecord.LanguageId, newRecord.TaskId, newRecord.StudentId, newRecord.TaskId, newRecord.CreatedAt, newRecord.StudentId);
     }
 }
